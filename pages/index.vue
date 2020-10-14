@@ -3,23 +3,9 @@
     <div>
       <h1 class="title">petfinder</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Browse Dogs
-        </a>
+        <nuxt-link to="/dogs">Browse Dogs</nuxt-link>
         |
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Browse Cats
-        </a>
+        <nuxt-link to="/cats">Browse Cats</nuxt-link>
       </div>
     </div>
   </div>
@@ -44,7 +30,7 @@ export default {}
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 80px;
   color: #35495e;
   letter-spacing: 1px;
 }

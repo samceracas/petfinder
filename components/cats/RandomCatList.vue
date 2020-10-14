@@ -69,7 +69,7 @@ export default {
 
   created() {
     this.upvotes = JSON.parse(localStorage.getItem('cat_upvotes')) || []
-    this.downvotes = JSON.parse(localStorage.getItem('downvotes')) || []
+    this.downvotes = JSON.parse(localStorage.getItem('cat_downvotes')) || []
   },
 
   methods: {
@@ -91,7 +91,7 @@ export default {
     downvote(id) {
       if (this.isDownvoted(id)) return
       this.downvotes.push(id)
-      localStorage.setItem('downvotes', JSON.stringify(this.downvotes))
+      localStorage.setItem('cat_downvotes', JSON.stringify(this.downvotes))
       this.$notification.open({
         message: 'Catto downvoted :<',
         icon: <a-icon type="frown" style="color: red" />,

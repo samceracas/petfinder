@@ -4,7 +4,7 @@
       margin: '24px 16px',
       padding: '24px',
       background: '#fff',
-      minHeight: '280px',
+      minHeight: '84vh',
     }"
   >
     <RandomDogList />
