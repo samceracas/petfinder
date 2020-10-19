@@ -7,7 +7,6 @@ export default {
 
   // router settings
   router: {
-    mode: 'hash',
     base: '/petfinder/',
   },
 
