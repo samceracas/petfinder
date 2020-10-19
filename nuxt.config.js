@@ -5,6 +5,12 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  // router settings
+  router: {
+    mode: 'hash',
+    base: '/petfinder/',
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'petfinder',
